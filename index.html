@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./src/style.css">
+    <title>Password Generator</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="password_box">
+            <span class="span_password">Password</span>
+            <button class="button_copy material-symbols-outlined">content_copy</button>
+        </div>
+        <div class="range_box">
+            <input class="input_range" type="range" min="6" max="16" value="8">
+            <span class="span_password_length">8</span>
+        </div>
+        <div class="checkbox">
+            <div>
+                <label for="uppercase">Include Uppercase Letters</label>
+                <input type="checkbox" id="uppercase">
+            </div>
+            <div>
+                <label for="numbers">Include Numbers</label>
+                <input type="checkbox" id="numbers">
+            </div>
+            <div>
+                <label for="special">Include Symbols</label>
+                <input type="checkbox" id="special">
+            </div>
+        </div>
+        <button class="button_generate">Generate Password</button>
+    </div>
+    <script src="./src/index.js"></script>
+</body>
+
+</html>
